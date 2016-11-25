@@ -1,4 +1,3 @@
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 # bash-completion settings
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
    . $(brew --prefix)/etc/bash_completion
