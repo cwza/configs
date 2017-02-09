@@ -17,3 +17,5 @@ fi
 
 # directory alias through shell variable
 blog=~/cwz/develop/hexo/hexo_blog
+faceblock=~/cwz/develop/faceblock
+develop=~/cwz/develop 
