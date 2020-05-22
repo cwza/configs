@@ -1,0 +1,8 @@
+[user]
+	name = cwza
+	email = cwz0205a@gmail.com
+[push]
+	default = simple
+[core]
+	quotepath = false
+	editor = /usr/bin/vim
