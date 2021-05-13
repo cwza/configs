@@ -1,6 +1,9 @@
 # alias
 alias "mydu"="du -hs .* *"
+alias vim="nvim"
+alias reset="tput reset"
 export colab="/Users/cwz/gdrive/Colab_Codes"
+export cses="/Users/cwz/cwz/competitive_programming/CSES"
 
 # direnv
 eval "$(direnv hook zsh)"
@@ -21,11 +24,25 @@ else
     fi
 fi
 unset __conda_setup
+conda deactivate
 # <<< conda initialize <<<
 
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/cwz/cwz/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/cwz/cwz/bin/google-cloud-sdk/path.zsh.inc'; fi
-
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/cwz/cwz/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/cwz/cwz/bin/google-cloud-sdk/completion.zsh.inc'; fi
+
+# For go
+export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$PATH:/Users/cwz/cwz/bin"
+
+# PostgreSQL
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
+
+# MongoDB
+export PATH="$PATH:/Applications/MongoDB.app/Contents/Resources/Vendor/mongodb/bin"
+
+# homebrew llvm
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+alias lldb="/usr/bin/lldb"
